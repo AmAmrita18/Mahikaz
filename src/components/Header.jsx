@@ -28,9 +28,9 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="w-full bg-black ">
+    <div className="w-full bg-transparent">
       <div className="flex justify-between items-center w-[80%] max-w-[1200px] md:px-4 px-0 py-8 mx-auto">
-        <ul className="md:flex items-center hidden lg:gap-x-14 md:gap-x-8  gap-4 md:text-[17px] text-[15px] text-white leading-6">
+        <ul className="md:flex items-center hidden lg:gap-x-14 md:gap-x-8  gap-4 md:text-[17px] text-[15px] text-white leading-5">
           <li className="transition-all duration-700 ease-in-out  hover:scale-95 ">
             <NavLink
               to="/"
@@ -48,7 +48,7 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-        <div>
+        <div className="ml-[9rem]">
           <Link to="/">
             <img
               src={logo}
@@ -62,7 +62,7 @@ const Header = () => {
         </div>
 
         
-          <ul className="md:flex  items-center hidden lg:gap-x-14 md:gap-x-8  gap-4 md:text-[17px] text-[15px] text-white leading-6">
+          <ul className="md:flex  items-center hidden lg:gap-x-14 md:gap-x-8  gap-4 md:text-[17px] text-[15px] text-white leading-5">
             <li className="transition-all duration-700 ease-in-out  hover:scale-95 ">
               <NavLink
                 to="/blog"
@@ -98,15 +98,15 @@ const Header = () => {
           </div>
         </div>
         <div
-          className={`space-y-4 w-[85%]  rounded-2xl max-w-[1200px] mx-auto px-4 md:hidden mt-16 py-32 bg-[#0A385A] opacity-90 ${
+          className={`space-y-4 w-[85%]  rounded-2xl max-w-[1200px] mx-auto px-4 md:hidden mt-16 py-32 bg-black opacity-90 ${
             isMenuOpen ? "block fixed top-14 right-0 left-0" : "hidden"
           }`}
         >
-          <ul className=" flex flex-col items-center  lg:gap-x-14 md:gap-x-8  gap-8 md:text-[17px] text-[15px] font-[700] text-[#FFFFFF] leading-6">
+          <ul className=" flex flex-col items-center  lg:gap-x-14 md:gap-x-8  gap-8 md:text-[17px] text-[15px] font-[700] text-white leading-5">
             <li className="transition-all duration-700 ease-in-out  hover:scale-95 ">
               <NavLink
                 to="/"
-                className={({ isActive }) => `${isActive && "text-[#EF4030]"}`}
+                className={({ isActive }) => `${isActive && "text-underline"}`}
               >
                 HOME
               </NavLink>
@@ -114,7 +114,7 @@ const Header = () => {
             <li className="transition-all duration-700 ease-in-out  hover:scale-95 ">
               <NavLink
                 to="/about"
-                className={({ isActive }) => `${isActive && "text-[#EF4030]"}`}
+                className={({ isActive }) => `${isActive && "text-underline"}`}
               >
                 ABOUT US
               </NavLink>
@@ -122,7 +122,7 @@ const Header = () => {
             <li className="transition-all duration-700 ease-in-out  hover:scale-95 ">
               <NavLink
                 to="/products"
-                className={({ isActive }) => `${isActive && "text-[#EF4030]"}`}
+                className={({ isActive }) => `${isActive && "text-underline"}`}
               >
                 PRODUCTS
               </NavLink>
@@ -130,7 +130,7 @@ const Header = () => {
             <li className="transition-all duration-700 ease-in-out  hover:scale-95 ">
               <NavLink
                 to="/contact"
-                className={({ isActive }) => `${isActive && "text-[#EF4030]"}`}
+                className={({ isActive }) => `${isActive && "text-underline"}`}
               >
                 CONTACT
               </NavLink>
