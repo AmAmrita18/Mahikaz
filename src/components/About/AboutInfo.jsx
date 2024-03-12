@@ -12,7 +12,7 @@ const AboutInfo = () => {
         objectFit: "cover",
       }}
     >
-      <div className="py-32 flex flow-row">
+      <div className="py-32 flex flex-row">
         <div
           className="w-[50%] h-[750px]"
           style={{
@@ -25,7 +25,7 @@ const AboutInfo = () => {
           <div className="w-[93%] rounded-r-[54px] bg-[#39271680] h-[657px] "></div>
         </div>
 
-        <div className="w-[50%] h-full mx-auto max-w-[1200px] flex flex-col gap-12 pl-16 pr-32">
+        <div className="w-[50%] h-full mx-auto max-w-[1200px] flex flex-col gap-12 pl-16 pr-40">
           <h1 className="text-[50px] text-black leading-[57.6px] tracking-[-1.26px]">
             Navigating Your Real Estate Dreams in Mauritius
           </h1>

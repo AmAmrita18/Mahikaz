@@ -7,7 +7,7 @@ import menu from '/MENU.png'
 import { FaBars } from "react-icons/fa";
 import { IoIosCloseCircle } from "react-icons/io";
 
-const Header = () => {
+const Header = ({transparent}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -28,7 +28,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="w-full bg-transparent">
+    <div className={`w-full bg-[#251408]  ${transparent && "bg-transparent"}`}>
       <div className="flex justify-between items-center w-[80%] max-w-[1200px]  py-8 mx-auto">
         <ul className="md:flex items-center hidden lg:gap-x-14 md:gap-x-8  gap-4 md:text-[17px] text-[15px] text-white leading-5">
           <li className="transition-all duration-700 ease-in-out  hover:scale-95 ">

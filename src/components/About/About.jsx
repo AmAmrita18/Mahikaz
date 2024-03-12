@@ -2,6 +2,7 @@ import React from 'react'
 import HeroAbout from './HeroAbout'
 import AboutInfo from './AboutInfo'
 import FindPlace from './FindPlace'
+import PropertySearch from './PropertySearch'
 
 const About = () => {
   return (
@@ -9,6 +10,7 @@ const About = () => {
       <HeroAbout/>
       <AboutInfo/>
       <FindPlace/>
+      <PropertySearch/>
     </div>
   )
 }

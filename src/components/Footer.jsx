@@ -34,7 +34,7 @@ const Footer = () => {
           <div>
             <img src={footerLogo} alt="" />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-y-8">
             <div>
               <h1 className="text-[#1E1E1E] text-[24px] leading-[27.65px] tracking-widest">
                 Agents

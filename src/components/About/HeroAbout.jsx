@@ -12,7 +12,7 @@ const HeroAbout = () => {
         objectFit: "cover",
       }}
     >
-      <Header />
+      <Header transparent={true}/>
       <div className="w-[80%] h-full mx-auto max-w-[1200px]  pt-36 pb-56 flex flex-col gap-6 justify-center items-center">
         <h1 className="text-[60px] px-60 text-center text-white leading-[80px] tracking-[-2.01px]">
           Unveiling the Splendor of Mauritius Real Estate
