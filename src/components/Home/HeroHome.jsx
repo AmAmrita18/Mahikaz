@@ -26,7 +26,7 @@ const HeroHome = () => {
           Dive Into A Realm, Where Every Property Tells A Story,And Every Space
           Whispers Luxury
         </p>
-        <button className="border border-[#937D64]">
+        <button className="border transition-all duration-700 ease-in-out  hover:scale-95 border-[#937D64]">
           <h1 className="text-white text-[17px] leading-[19.58px] px-14 py-3">
             SEARCH ALL HOMES
           </h1>
