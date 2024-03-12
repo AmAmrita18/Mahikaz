@@ -45,7 +45,7 @@ const Region = () => {
           </div>
 
           <div className="relative">
-            <img src={region3} alt="" className="brightness-50" />
+            <img src={region3} alt="" className="brightness-50 " />
             <div className="px-8 absolute bottom-0 mb-4">
               <h1 className="text-white text-[40px] leading-[46.08px] tracking-widest">
                 West Coast

@@ -11,6 +11,7 @@ const Results = () => {
         objectFit: "cover",
       }}
     >
+      <div className="w-full bg-[#32210DAD]">
       <div className="w-[80%] h-full mx-auto max-w-[1200px] py-32 flex flex-col items-center gap-y-12">
         <h1 className="text-[60px] leading-[69.12px] tracking-widest text-white">PROVEN RESULTS</h1>
         <p className="text-[20px] leading-[23.04px] tracking-widest text-white text-center px-44">Mahikaz stands on a legacy of unmatched results. More than statistics, our success is etched in the smiles of our clients and the seamless deals we've orchestrated. Trust Mahikaz: where every transaction is a testament to our excellence.</p>
@@ -28,6 +29,7 @@ const Results = () => {
             <h2 className="text-[19px] text-center leading-[21.89px] tracking-widest text-white">SATISFIED CLIENTS</h2>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
