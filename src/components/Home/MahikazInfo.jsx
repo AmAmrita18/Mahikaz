@@ -25,12 +25,12 @@ const MahikazInfo = () => {
           </p>
           <div className="flex flex-row gap-4">
             <button className="border transition-all duration-700 ease-in-out  hover:scale-95 border-[#937D64]">
-              <h1 className="text-white text-[17px] leading-[19.58px] px-14 py-3">
+              <h1 className="text-white text-[17px] leading-[19.58px] px-8 py-3">
                 WORK WITH MAHIKAZ
               </h1>
             </button>
             <button className="border transition-all duration-700 ease-in-out  hover:scale-95 bg-white">
-              <h1 className="text-[#937D64] text-[17px] leading-[19.58px] px-14 py-3">
+              <h1 className="text-[#1D1010] text-[17px] leading-[19.58px] px-8 py-3">
                 HOME SEARCH
               </h1>
             </button>
