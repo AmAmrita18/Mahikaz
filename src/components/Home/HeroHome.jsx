@@ -23,7 +23,7 @@ const HeroHome = () => {
           </h1>
         </div>
         <p className="text-white text-[20px] leading-[35px] w-[50%] px-14 text-center">
-          Dive Into A Realm, Where Every Property Tells A Story,And Every Space
+          Dive Into A Realm, Where Every Property Tells A Story, And Every Space
           Whispers Luxury
         </p>
         <button className="border transition-all duration-700 ease-in-out  hover:scale-95 border-[#937D64]">
