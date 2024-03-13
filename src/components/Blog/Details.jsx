@@ -1,5 +1,10 @@
 import infoBG from "/footerBG.png";
 import React from "react";
+import { FaBed, FaHashtag } from "react-icons/fa6";
+import { FaBath } from "react-icons/fa";
+import { ImHome } from "react-icons/im";
+import { SlCalender } from "react-icons/sl";
+
 import propertyHouse from "../../assets/Property House.png";
 import facility1 from "../../assets/Rectangle (1).png";
 import facility2 from "../../assets/Rectangle (2).png";
@@ -54,19 +59,21 @@ const Details = () => {
             </div>
             <div className="flex flex-row justify-between ">
               <div className="mx-auto text-center pr-16 border-r border-[#E4E4E4] py-4">
-                <h1>4</h1>
+                <h1 className="flex flex-row gap-2 items-center"><FaBed />4</h1>
               </div>
               <div className="mx-auto text-center pr-16 border-r border-[#E4E4E4] py-4">
-                <h1>2</h1>
+                <h1 className="flex flex-row gap-2 items-center"><FaBath />2</h1>
               </div>
               <div className="mx-auto text-center pr-16 border-r border-[#E4E4E4] py-4">
-                <h1>2</h1>
+                <h1 className="flex flex-row gap-2 items-center"><FaHashtag />2</h1>
               </div>
               <div className="mx-auto text-center pr-16 border-r border-[#E4E4E4] py-4">
-                <h1>1</h1>
+                <h1 className="flex flex-row gap-2 items-center"><ImHome />
+1</h1>
               </div>
               <div className="mx-auto  py-4">
-                <h1>2007</h1>
+                <h1 className="flex flex-row gap-2 items-center"><SlCalender />
+2007</h1>
               </div>
             </div>
           </div>
