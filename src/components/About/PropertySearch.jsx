@@ -9,7 +9,7 @@ const PropertySearch = () => {
     >
       <div className=" flex flex-row-reverse">
         <div
-          className="w-[50%]  h-[860px]"
+          className="w-[50%]"
           style={{
             backgroundImage: `url('${propertyPeople}')`,
             backgroundRepeat: "no-repeat",
@@ -17,10 +17,9 @@ const PropertySearch = () => {
             objectFit: "cover",
           }}
         >
-          <div className="w-full shadow-2xl rounded-tl-[60px]  h-[785px] "></div>
         </div>
 
-        <div className="w-[50%] py-44 h-full mx-auto max-w-[1200px] flex flex-col gap-12 pr-32 pl-40">
+        <div className="w-[50%] py-44 h-full mx-auto max-w-[1200px] flex flex-col gap-12 pr-12 pl-32">
           <h1 className="text-[50px] text-black leading-[57.6px] tracking-[-1.26px]">
           Personalized and Curated Property Search          </h1>
           <p className="text-[20px] text-black leading-[28px] tracking-[-0.5px]">
