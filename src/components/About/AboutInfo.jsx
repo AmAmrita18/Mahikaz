@@ -4,15 +4,10 @@ import infoPeople from "/infoPeople.png";
 const AboutInfo = () => {
   return (
     <div
-      className="w-full"
-      style={{
-        backgroundImage: `url('${infoBG}')`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        objectFit: "cover",
-      }}
+      className="w-full bg-white"
+     
     >
-      <div className="md:py-32 py-12 flex md:flex-row flex-col">
+      <div className="md:pt-32 py-12 flex md:flex-row flex-col">
         <div
           className="md:w-[50%] h-[750px] brightness-50 md:rounded-tr-[54px]"
           style={{

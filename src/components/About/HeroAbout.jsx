@@ -17,7 +17,7 @@ const HeroAbout = () => {
         <h1 className="md:text-[60px] text-[45px] md:px-60 text-center text-white md:leading-[80px] tracking-[-2.01px]">
           Unveiling the Splendor of Mauritius Real Estate
         </h1>
-        <p className="text-white text-[20px] leading-[35px] md:w-[50%]  text-center">
+        <p className="text-white text-[20px] leading-[35px] md:w-[50%] tracking-[-0.5px] text-center">
           Embark on a journey to your dream home in Mauritius with our tailored
           services, bespoke properties, and unmatched local expertise. Let
           Mahikaz guide you to a world where luxury meets tranquility.

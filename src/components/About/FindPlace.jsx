@@ -15,14 +15,14 @@ const FindPlace = () => {
       backgroundSize: "cover",
       objectFit: "cover",
     }}>
-        <div className="w-[80%] h-full mx-auto max-w-[1200px] pb-32">
+        <div className="w-[80%] h-full mx-auto max-w-[1200px] py-28">
           <div className='w-[170px] h-1 bg-black rounded-md'></div>
           <h1 className='text-[50px] py-4 text-black leading-[57.6px] tracking-[-1.26px]'>Find your next place to live</h1>
           <DropdownList/>
-         <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-12 gap-y-8'>
+         <div className='grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 gap-x-12 gap-y-8'>
          {
             estates.map((est) => (
-              <div key={est.id} className="flex flex-col   bg-[#fff] rounded-[32px]">
+              <div key={est.id} className="flex flex-col shadow-2xl  bg-[#fff] rounded-[32px]">
                 <img src={est.thumbnail} alt="thumbnail" className='w-full h-52 rounded-t-[30px] brightness-50' />
                 <h3 className='text-black text-[24px] p-8 leading-[27.65px] tracking-[-0.6px] border-b border-[#E4E4E4]'>{est.title}</h3>
                 <div className="flex justify-between w-full rounded-b-[32px] text-black">

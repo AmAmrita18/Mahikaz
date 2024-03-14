@@ -28,7 +28,7 @@ const SimilarListingSlider = () => {
         objectFit: "cover",
       }}
     >
-      <div className="w-[80%] h-full mx-auto max-w-[1200px]">
+      <div className="py-12">
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
@@ -43,7 +43,7 @@ const SimilarListingSlider = () => {
         >
           <SwiperSlide>
             <div className="grid gap-x-12 gap-y-8">
-              <div className="flex flex-col   bg-[#fff] rounded-[32px]">
+              <div className="flex flex-col bg-[#fff] rounded-[32px]">
                 <img
                   src={house1}
                   alt="thumbnail"
