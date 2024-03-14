@@ -171,8 +171,12 @@ const Details = () => {
             </div>
           </div>
         </div>
-        <div className="w-[40%] h-[520px] mx-6 bg-white shadow-2xl rounded-3xl py-3">
-          <div>
+
+
+
+        <div className="w-[40%]  ">
+          <div className="w-full bg-white
+            mx-6  shadow-2xl rounded-2xl py-6">
             <div className="flex flex-row gap-3 items-center bg-[#F5F5F5] mx-6 my-3 rounded-xl px-3 py-4">
               <div>
                 <img src={profile} width={40} height={40} alt="" />
@@ -235,8 +239,9 @@ const Details = () => {
               </button>
             </form>
           </div>
-          <div>
-            <div className="mt-12 bg-white rounded-xl ">
+          <br />
+          <div className="w-full  mb-10 mx-6  shadow-2xl rounded-2xl ">
+            <div className="mt-4 bg-white rounded-xl ">
               <div className="flex justify-between px-6 py-8 mx-6 border-b border-[#E4E4E4]">
                 <h1 className="text-black text-[20px] leading-[23.04px] tracking-[-0.5px]">
                   Description

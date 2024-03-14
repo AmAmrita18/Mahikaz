@@ -20,17 +20,12 @@ import { FaBath } from "react-icons/fa";
 const SimilarListingSlider = () => {
   return (
     <div
-      className="w-full"
-      style={{
-        backgroundImage: `url('${infoBG}')`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        objectFit: "cover",
-      }}
+      className="w-full bg-white"
+     
     >
       <div className="py-12">
         <Swiper
-          slidesPerView={3}
+          slidesPerView={4}
           spaceBetween={30}
           keyboard={{
             enabled: true,
@@ -42,154 +37,152 @@ const SimilarListingSlider = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="grid gap-x-12 gap-y-8">
-              <div className="flex flex-col bg-[#fff] rounded-[32px]">
+          <div className="flex flex-col mb-12  shadow-xl bg-[#fff] rounded-2xl">
                 <img
                   src={house1}
                   alt="thumbnail"
-                  className="w-full h-52 rounded-t-[30px] brightness-50"
+                  className="w-full h-52 rounded-t-2xl brightness-50"
                 />
                 <h3 className="text-black text-[24px] p-8 leading-[27.65px] tracking-[-0.6px] border-b border-[#E4E4E4]">
                   Lorem Ipsum
                 </h3>
                 <div className="flex justify-between w-full rounded-b-[32px] text-black">
-                  <p className="flex gap-x-2 py-3  px-12 items-center">
+                  <p className="flex gap-x-2 py-3  px-6 items-center">
                     <FaBed />4
                   </p>
-                  <p className="flex gap-x-2 py-4  px-12 items-center border-l border-r border-[#E4E4E4]">
+                  <p className="flex gap-x-2 py-4  px-6 items-center border-l border-r border-[#E4E4E4]">
                     <FaBath />2
                   </p>
-                  <p className="flex gap-x-2 py-3  px-12 items-center">
+                  <p className="flex gap-x-2 py-3  px-6 items-center">
                     <FaHashtag />2
                   </p>
                 </div>
               </div>
-            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="grid gap-x-12 gap-y-8">
-              <div className="flex flex-col   bg-[#fff] rounded-[32px]">
+            
+              <div className="flex flex-col mb-12  shadow-xl bg-[#fff] rounded-2xl">
                 <img
                   src={house2}
                   alt="thumbnail"
-                  className="w-full h-52 rounded-t-[30px] brightness-50"
+                  className="w-full h-52 rounded-t-2xl brightness-50"
                 />
                 <h3 className="text-black text-[24px] p-8 leading-[27.65px] tracking-[-0.6px] border-b border-[#E4E4E4]">
                   Lorem Ipsum
                 </h3>
                 <div className="flex justify-between w-full rounded-b-[32px] text-black">
-                  <p className="flex gap-x-2 py-3  px-12 items-center">
+                  <p className="flex gap-x-2 py-3  px-6 items-center">
                     <FaBed />4
                   </p>
-                  <p className="flex gap-x-2 py-4  px-12 items-center border-l border-r border-[#E4E4E4]">
+                  <p className="flex gap-x-2 py-4  px-6 items-center border-l border-r border-[#E4E4E4]">
                     <FaBath />2
                   </p>
-                  <p className="flex gap-x-2 py-3  px-12 items-center">
+                  <p className="flex gap-x-2 py-3  px-6 items-center">
                     <FaHashtag />2
                   </p>
                 </div>
               </div>
-            </div>
+            
           </SwiperSlide>
           <SwiperSlide>
-            <div className="grid gap-x-12 gap-y-8">
-              <div className="flex flex-col   bg-[#fff] rounded-[32px]">
+            
+              <div className="flex flex-col mb-12  shadow-xl  bg-[#fff] rounded-2xl">
                 <img
                   src={house3}
                   alt="thumbnail"
-                  className="w-full h-52 rounded-t-[30px] brightness-50"
+                  className="w-full h-52 rounded-t-2xl brightness-50"
                 />
                 <h3 className="text-black text-[24px] p-8 leading-[27.65px] tracking-[-0.6px] border-b border-[#E4E4E4]">
                   Lorem Ipsum
                 </h3>
                 <div className="flex justify-between w-full rounded-b-[32px] text-black">
-                  <p className="flex gap-x-2 py-3  px-12 items-center">
+                  <p className="flex gap-x-2 py-3  px-6 items-center">
                     <FaBed />4
                   </p>
-                  <p className="flex gap-x-2 py-4  px-12 items-center border-l border-r border-[#E4E4E4]">
+                  <p className="flex gap-x-2 py-4  px-6 items-center border-l border-r border-[#E4E4E4]">
                     <FaBath />2
                   </p>
-                  <p className="flex gap-x-2 py-3  px-12 items-center">
+                  <p className="flex gap-x-2 py-3  px-6 items-center">
                     <FaHashtag />2
                   </p>
                 </div>
               </div>
-            </div>
+            
           </SwiperSlide>
           <SwiperSlide>
-            <div className="grid gap-x-12 gap-y-8">
-              <div className="flex flex-col   bg-[#fff] rounded-[32px]">
+           
+              <div className="flex flex-col mb-12  shadow-xl  bg-[#fff] rounded-2xl">
                 <img
                   src={house4}
                   alt="thumbnail"
-                  className="w-full h-52 rounded-t-[30px] brightness-50"
+                  className="w-full h-52 rounded-t-2xl brightness-50"
                 />
                 <h3 className="text-black text-[24px] p-8 leading-[27.65px] tracking-[-0.6px] border-b border-[#E4E4E4]">
                   Lorem Ipsum
                 </h3>
                 <div className="flex justify-between w-full rounded-b-[32px] text-black">
-                  <p className="flex gap-x-2 py-3  px-12 items-center">
+                  <p className="flex gap-x-2 py-3  px-6 items-center">
                     <FaBed />4
                   </p>
-                  <p className="flex gap-x-2 py-4  px-12 items-center border-l border-r border-[#E4E4E4]">
+                  <p className="flex gap-x-2 py-4  px-6 items-center border-l border-r border-[#E4E4E4]">
                     <FaBath />2
                   </p>
-                  <p className="flex gap-x-2 py-3  px-12 items-center">
+                  <p className="flex gap-x-2 py-3  px-6 items-center">
                     <FaHashtag />2
                   </p>
                 </div>
               </div>
-            </div>
+            
           </SwiperSlide>
           <SwiperSlide>
-            <div className="grid gap-x-12 gap-y-8">
-              <div className="flex flex-col   bg-[#fff] rounded-[32px]">
+            
+              <div className="flex flex-col mb-12  shadow-xl  bg-[#fff] rounded-2xl">
                 <img
                   src={house5}
                   alt="thumbnail"
-                  className="w-full h-52 rounded-t-[30px] brightness-50"
+                  className="w-full h-52 rounded-t-2xl brightness-50"
                 />
                 <h3 className="text-black text-[24px] p-8 leading-[27.65px] tracking-[-0.6px] border-b border-[#E4E4E4]">
                   Lorem Ipsum
                 </h3>
                 <div className="flex justify-between w-full rounded-b-[32px] text-black">
-                  <p className="flex gap-x-2 py-3  px-12 items-center">
+                  <p className="flex gap-x-2 py-3  px-6 items-center">
                     <FaBed />4
                   </p>
-                  <p className="flex gap-x-2 py-4  px-12 items-center border-l border-r border-[#E4E4E4]">
+                  <p className="flex gap-x-2 py-4  px-6 items-center border-l border-r border-[#E4E4E4]">
                     <FaBath />2
                   </p>
-                  <p className="flex gap-x-2 py-3  px-12 items-center">
+                  <p className="flex gap-x-2 py-3  px-6 items-center">
                     <FaHashtag />2
                   </p>
                 </div>
               </div>
-            </div>
+           
           </SwiperSlide>
           <SwiperSlide>
-            <div className="grid gap-x-12 gap-y-8">
-              <div className="flex flex-col   bg-[#fff] rounded-[32px]">
+            
+              <div className="flex flex-col mb-12  shadow-xl   bg-[#fff] rounded-2xl">
                 <img
                   src={house6}
                   alt="thumbnail"
-                  className="w-full h-52 rounded-t-[30px] brightness-50"
+                  className="w-full h-52 rounded-t-2xl brightness-50"
                 />
                 <h3 className="text-black text-[24px] p-8 leading-[27.65px] tracking-[-0.6px] border-b border-[#E4E4E4]">
                   Lorem Ipsum
                 </h3>
                 <div className="flex justify-between w-full rounded-b-[32px] text-black">
-                  <p className="flex gap-x-2 py-3  px-12 items-center">
+                  <p className="flex gap-x-2 py-3  px-6 items-center">
                     <FaBed />4
                   </p>
-                  <p className="flex gap-x-2 py-4  px-12 items-center border-l border-r border-[#E4E4E4]">
+                  <p className="flex gap-x-2 py-4  px-6 items-center border-l border-r border-[#E4E4E4]">
                     <FaBath />2
                   </p>
-                  <p className="flex gap-x-2 py-3  px-12 items-center">
+                  <p className="flex gap-x-2 py-3  px-6 items-center">
                     <FaHashtag />2
                   </p>
                 </div>
               </div>
-            </div>
+           
           </SwiperSlide>
         </Swiper>
       </div>
