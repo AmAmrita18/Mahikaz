@@ -20,7 +20,7 @@ import peop9 from "../../assets/Ellipse (7).png";
 
 
 import infoBG from "/footerBG.png";
-const PropertiesInfo = () => {
+const BlogInfo = () => {
   return (
     <div
       className="w-full"
@@ -231,4 +231,4 @@ Most Stunning Beachfront Homes
   );
 };
 
-export default PropertiesInfo;
+export default BlogInfo;

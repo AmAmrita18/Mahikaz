@@ -6,7 +6,7 @@ import Home from './components/Home/Home';
 import Layout from './Layout'
 import About from './components/About/About';
 import Blog from './components/Blog/Blog';
-import Properties from './components/Properties/Properties';
+import Properties from './components/PropertiesPage/Properties';
 
 const Root = () => (
   <Router>
@@ -14,8 +14,9 @@ const Root = () => (
       <Route path='/' element={<Layout />}>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/blog' element={<Blog/>} />
         <Route path='/properties' element={<Properties/>} />
+        <Route path='/blog' element={<Blog/>} />
+        
       </Route>
     </Routes>
   </Router>

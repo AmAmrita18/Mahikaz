@@ -63,20 +63,21 @@ const Header = ({transparent}) => {
 
         
           <ul className="md:flex  items-center hidden lg:gap-x-14 md:gap-x-8  gap-4 md:text-[17px] text-[15px] text-white leading-5">
-            <li className="transition-all duration-700 ease-in-out  hover:scale-95 ">
-              <NavLink
-                to="/blog"
-                className={({ isActive }) => `${isActive && "underline"}`}
-              >
-                BLOG
-              </NavLink>
-            </li>
+            
             <li className="transition-all duration-700 ease-in-out  hover:scale-95 ">
               <NavLink
                 to="/properties"
                 className={({ isActive }) => `${isActive && "underline"}`}
               >
                 PROPERTIES
+              </NavLink>
+            </li>
+            <li className="transition-all duration-700 ease-in-out  hover:scale-95 ">
+              <NavLink
+                to="/blog"
+                className={({ isActive }) => `${isActive && "underline"}`}
+              >
+                BLOG
               </NavLink>
             </li>
            <div>
