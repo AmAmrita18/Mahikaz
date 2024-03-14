@@ -12,9 +12,9 @@ const AboutInfo = () => {
         objectFit: "cover",
       }}
     >
-      <div className="py-32 flex flex-row">
+      <div className="md:py-32 py-12 flex md:flex-row flex-col">
         <div
-          className="w-[50%] h-[750px] brightness-50 rounded-tr-[54px]"
+          className="md:w-[50%] h-[750px] brightness-50 md:rounded-tr-[54px]"
           style={{
             backgroundImage: `url('${infoPeople}')`,
             backgroundRepeat: "no-repeat",
@@ -24,8 +24,8 @@ const AboutInfo = () => {
         >
         </div>
 
-        <div className="w-[50%] h-full mx-auto max-w-[1200px] flex flex-col gap-12 pl-12 pr-32">
-          <h1 className="text-[50px] text-black leading-[57.6px] tracking-[-1.26px]">
+        <div className="md:w-[50%] h-full mx-auto max-w-[1200px] flex flex-col gap-12 md:pl-12 md:pr-32 px-10">
+          <h1 className="md:text-[50px] text-[40px] text-black leading-[57.6px] tracking-[-1.26px]">
             Navigating Your Real Estate Dreams in Mauritius
           </h1>
           <p className="text-[20px] text-black leading-[28px] tracking-[-0.5px]">

@@ -15,11 +15,11 @@ const Region = () => {
         objectFit: "cover",
       }}
     >
-      <div className="w-[80%] h-full mx-auto max-w-[1200px] py-32 flex flex-col items-center gap-y-12">
-        <h1 className="text-[60px] leading-[69.12px] tracking-widest text-black">
-          PROVEN RESULTS
+      <div className="w-[80%] h-full mx-auto max-w-[1200px] md:py-32 py-12 flex flex-col items-center gap-y-12">
+        <h1 className="md:text-[60px] text-[45px] text-center leading-[69.12px] tracking-widest text-black">
+          CURATED BY RELIGION
         </h1>
-        <div className="flex flex-row gap-12">
+        <div className="flex md:flex-row flex-col gap-12">
           <div className="relative">
             <img src={region1} alt="" className="brightness-50" />
             <div className="px-8 absolute bottom-0 mb-4">

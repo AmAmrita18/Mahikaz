@@ -13,16 +13,16 @@ const HeroHome = () => {
       }}
     >
       <Header transparent={true}/>
-      <div className="w-[80%] h-full mx-auto max-w-[1200px]  pt-36 pb-56 flex flex-col gap-12 justify-center items-center">
+      <div className="w-[80%] h-full mx-auto max-w-[1200px]  md:pt-36 md:pb-56 pt-20 pb-32 flex flex-col gap-12 justify-center items-center">
         <div className="text-center">
           <h1 className="text-white text-[23px] leading-[26.5px] tracking-widest ">
             Curated Real Estate
           </h1>
-          <h1 className="text-white text-[60px] leading-[69.12px] tracking-widest ">
+          <h1 className="text-white md:text-[60px] text-[45px] leading-[69.12px] tracking-widest ">
             MAHIKAZ PROPERTIES
           </h1>
         </div>
-        <p className="text-white text-[20px] leading-[35px] w-[50%] px-14 text-center">
+        <p className="text-white text-[20px] leading-[35px] md:w-[50%] md:px-14 text-center">
           Dive Into A Realm, Where Every Property Tells A Story, And Every Space
           Whispers Luxury
         </p>

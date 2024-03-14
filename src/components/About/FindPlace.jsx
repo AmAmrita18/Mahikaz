@@ -19,7 +19,7 @@ const FindPlace = () => {
           <div className='w-[170px] h-1 bg-black rounded-md'></div>
           <h1 className='text-[50px] py-4 text-black leading-[57.6px] tracking-[-1.26px]'>Find your next place to live</h1>
           <DropdownList/>
-         <div className='grid grid-cols-3 gap-x-12 gap-y-8'>
+         <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-12 gap-y-8'>
          {
             estates.map((est) => (
               <div key={est.id} className="flex flex-col   bg-[#fff] rounded-[32px]">
@@ -34,7 +34,7 @@ const FindPlace = () => {
                     <FaBath />
                     {est.washroom}
                   </p>
-                  <p className='flex gap-x-2 py-3  px-12 items-center'>
+                  <p className='flex gap-x-2 py-3  md:px-12 px-4 items-center'>
                     <FaHashtag />
                     {est.livingroom}
                   </p>

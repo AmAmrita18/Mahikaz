@@ -53,7 +53,7 @@ const Header = ({transparent}) => {
             <img
               src={logo}
               alt="Logo"
-              className="py-2 object-cover lg:w-[110px]  lg:h-[120px] md:w-[90px] md:h-[100px] w-[50px] h-[60px]"
+              className="py-2 object-cover"
               width={80}
               height={80}
               loading="lazy"
@@ -65,12 +65,12 @@ const Header = ({transparent}) => {
           <ul className="md:flex  items-center hidden lg:gap-x-14 md:gap-x-8  gap-4 md:text-[17px] text-[15px] text-white leading-5">
             
             <li className="transition-all duration-700 ease-in-out  hover:scale-95 ">
-              <NavLink
+              <Link
                 to="/properties"
                 className={({ isActive }) => `${isActive && "underline"}`}
               >
                 PROPERTIES
-              </NavLink>
+              </Link>
             </li>
             <li className="transition-all duration-700 ease-in-out  hover:scale-95 ">
               <NavLink
@@ -81,7 +81,10 @@ const Header = ({transparent}) => {
               </NavLink>
             </li>
            <div>
-             <img src={menu} width={60} height={60} alt="" />
+            <NavLink to="/contacts">
+            <img  src={menu} width={60} height={60} alt="" />
+            </NavLink>
+             
            </div>
           </ul>
        
@@ -122,18 +125,18 @@ const Header = ({transparent}) => {
             </li>
             <li className="transition-all duration-700 ease-in-out  hover:scale-95 ">
               <NavLink
-                to="/products"
+                to="/properties"
                 className={({ isActive }) => `${isActive && "text-underline"}`}
               >
-                PRODUCTS
+                PROPERTIES
               </NavLink>
             </li>
             <li className="transition-all duration-700 ease-in-out  hover:scale-95 ">
               <NavLink
-                to="/contact"
+                to="/blog"
                 className={({ isActive }) => `${isActive && "text-underline"}`}
               >
-                CONTACT
+                BLOG
               </NavLink>
             </li>
           </ul>

@@ -7,6 +7,7 @@ import Layout from './Layout'
 import About from './components/About/About';
 import Blog from './components/Blog/Blog';
 import Properties from './components/PropertiesPage/Properties';
+import Contacts from './components/Contacts/Contacts';
 
 const Root = () => (
   <Router>
@@ -16,7 +17,7 @@ const Root = () => (
         <Route path='/about' element={<About />} />
         <Route path='/properties' element={<Properties/>} />
         <Route path='/blog' element={<Blog/>} />
-        
+        <Route path='/contacts' element={<Contacts/>} />
       </Route>
     </Routes>
   </Router>
