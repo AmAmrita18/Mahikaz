@@ -9,7 +9,7 @@ import Heading from './Heading'
 const Properties = () => {
   return (
     <div>
-      <Header transparent={false}/>
+      
       <Heading/>
       <Details/>
       <SimilarListings/>

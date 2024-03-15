@@ -20,6 +20,7 @@ import peop9 from "../../assets/Ellipse (7).png";
 
 import infoBG from "/footerBG.png";
 import { Link } from "react-router-dom";
+import Header from "../Header";
 const BlogInfo = () => {
   return (
     <div
@@ -32,6 +33,7 @@ const BlogInfo = () => {
       }}
     >
       <div className="w-full bg-[#937D6466]">
+      <Header transparent={true}/>
         <div className="w-[80%] mx-auto max-w-[1200px] h-full py-24 flex flex-col gap-4">
           <h1 className="text-[60px] leading-[69.12px] text-white">
             Mahikaz Insights: Navigating the Mauritian Property Landscape

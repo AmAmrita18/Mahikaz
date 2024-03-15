@@ -15,6 +15,7 @@ import facility5 from "../../assets/Rectangle (5).png";
 import facility6 from "../../assets/Rectangle (6).png";
 import facility7 from "../../assets/Rectangle (7).png";
 import profile from "../../assets/profile.png";
+import Header from "../Header";
 const Details = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -29,6 +30,7 @@ const Details = () => {
         objectFit: "cover",
       }}
     >
+      <Header transparent={true}/>
       <div className="w-[80%] h-full mx-auto max-w-[1200px] pt-28 pb-12 flex flex-col">
         <div className="flex flex-row justify-between mb-10 ">
           <div className="flex flex-col gap-y-8">
