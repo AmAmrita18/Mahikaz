@@ -32,15 +32,15 @@ const AllProperties = () => {
                 <img src={est.thumbnail} alt="thumbnail" className='w-full h-52 rounded-t-[30px] brightness-50' />
                 <h3 className='text-black text-[24px] p-8 leading-[27.65px] tracking-[-0.6px] border-b border-[#E4E4E4]'>{est.title}</h3>
                 <div className="flex justify-between w-full rounded-b-[32px] text-black">
-                  <p className='flex gap-x-2 py-3  px-12 items-center'>
+                  <p className='flex gap-x-2 py-3  px-8 items-center'>
                     <FaBed />
                     {est.beds}
                   </p>
-                  <p className='flex gap-x-2 py-4  px-12 items-center border-l border-r border-[#E4E4E4]'>
+                  <p className='flex gap-x-2 py-4  px-8 items-center border-l border-r border-[#E4E4E4]'>
                     <FaBath />
                     {est.washroom}
                   </p>
-                  <p className='flex gap-x-2 py-3  md:px-12 px-4 items-center'>
+                  <p className='flex gap-x-2 py-3  md:px-8 px-4 items-center'>
                     <FaHashtag />
                     {est.livingroom}
                   </p>

@@ -5,7 +5,7 @@ const DropdownList = () => {
   return (
     <div className="w-full">
       <div className="w-[80%] h-full  max-w-[1200px] py-12 flex flex-row gap-0">
-        <div className="bg-white rounded-l-3xl border-r border-[#E4E4E4] pl-4 pr-44 py-12 flex items-start justify-start">
+        <div className="bg-white rounded-l-3xl border-r border-[#E4E4E4] px-16 py-10 flex items-start justify-start">
           <select label="Looking For" 
             name="lookingfor"
             id="lookingfor"
@@ -17,7 +17,7 @@ const DropdownList = () => {
           </select>
         </div>
 
-        <div className="bg-white border-r  border-[#E4E4E4] pl-4 pr-44 py-12 flex items-start justify-start">
+        <div className="bg-white border-r  border-[#E4E4E4] px-16 py-10 flex items-start justify-start">
           <select
           label="Location" 
             name="location"
@@ -33,7 +33,7 @@ const DropdownList = () => {
           </select>
         </div>
 
-        <div className="bg-white border-r border-[#E4E4E4] pl-4 pr-44 py-12 flex items-start justify-start">
+        <div className="bg-white border-r border-[#E4E4E4] px-16 py-10 flex items-start justify-start">
           <select
            label="Property Type"
             name="propertytype"
@@ -48,7 +48,7 @@ const DropdownList = () => {
           </select>
         </div>
 
-        <div className="bg-white rounded-r-3xl  pl-4 pr-44 py-12 flex items-start justify-start">
+        <div className="bg-white rounded-r-3xl  px-16 py-10 flex items-start justify-start">
           <select
             label="Price"
             name="price"

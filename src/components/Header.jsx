@@ -28,13 +28,13 @@ const Header = ({transparent}) => {
   }, []);
 
   return (
-    <div className={`w-full text-[#251408]  ${transparent && "text-[#251408]"}`}>
+    <div className={`w-full bg-[#251408]  ${transparent && "bg-transparent"}`}>
       <div className="flex justify-between items-center w-[80%] max-w-[1200px]  py-8 mx-auto">
         <ul className="md:flex items-center hidden lg:gap-x-14 md:gap-x-8  gap-4 md:text-[17px] text-[15px] text-white leading-5">
           <li className="transition-all duration-700 ease-in-out  hover:scale-95 ">
             <NavLink
               to="/"
-              className={({ isActive }) => `${isActive && "underline"}`}
+              className={({ isActive }) => `${isActive && "font-extrabold"}`}
             >
               HOME
             </NavLink>
@@ -42,7 +42,7 @@ const Header = ({transparent}) => {
           <li className="transition-all duration-700 ease-in-out  hover:scale-95 ">
             <NavLink
               to="/about"
-              className={({ isActive }) => `${isActive && "underline"}`}
+              className={({ isActive }) => `${isActive && "font-extrabold"}`}
             >
               ABOUT
             </NavLink>
@@ -65,17 +65,17 @@ const Header = ({transparent}) => {
           <ul className="md:flex  items-center hidden lg:gap-x-14 md:gap-x-8  gap-4 md:text-[17px] text-[15px] text-white leading-5">
             
             <li className="transition-all duration-700 ease-in-out  hover:scale-95 ">
-              <Link
+<NavLink
                 to="/properties"
-                className={({ isActive }) => `${isActive && "underline"}`}
+                className={({ isActive }) => `${isActive && "font-extrabold"}`}
               >
                 PROPERTIES
-              </Link>
+              </NavLink>
             </li>
-            <li className="transition-all duration-700 ease-in-out  hover:scale-95 ">
+            <li className="transition-all duration-700 ease-in-out   hover:scale-95 ">
               <NavLink
                 to="/blog"
-                className={({ isActive }) => `${isActive && "underline"}`}
+                className={({ isActive }) => `${isActive && "font-extrabold"}`}
               >
                 BLOG
               </NavLink>
