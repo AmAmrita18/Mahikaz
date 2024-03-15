@@ -1,15 +1,13 @@
 import React from 'react'
 import Header from '../Header'
-import PropertiesInfo from './BlogInfo'
+import BlogInfo from './BlogInfo'
 
 
 const Blog = () => {
   return (
     <div>
-      
-      <PropertiesInfo/>
-      
-    </div>
+      <BlogInfo/>
+      </div>
   )
 }
 
