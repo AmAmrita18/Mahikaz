@@ -9,6 +9,7 @@ import Blog from './components/Blog/Blog';
 import Properties from './components/PropertiesPage/Properties';
 import Contacts from './components/Contacts/Contacts';
 import MainBlogPage from './components/Blog/MainBlogPage';
+import AllProperties from './components/PropertiesPage/AllProperties';
 
 const Root = () => (
   <Router>
@@ -16,10 +17,11 @@ const Root = () => (
       <Route path='/' element={<Layout />}>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/properties' element={<Properties/>} />
+        <Route path='/mainproperty' element={<Properties/>} />
         <Route path='/blog' element={<Blog/>} />
         <Route path='/contacts' element={<Contacts/>} />
         <Route path='/mainblog' element={<MainBlogPage/>} />
+        <Route path='/properties' element={<AllProperties/>} />
       </Route>
     </Routes>
   </Router>
