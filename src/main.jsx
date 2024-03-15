@@ -8,6 +8,7 @@ import About from './components/About/About';
 import Blog from './components/Blog/Blog';
 import Properties from './components/PropertiesPage/Properties';
 import Contacts from './components/Contacts/Contacts';
+import MainBlogPage from './components/Blog/MainBlogPage';
 
 const Root = () => (
   <Router>
@@ -18,6 +19,7 @@ const Root = () => (
         <Route path='/properties' element={<Properties/>} />
         <Route path='/blog' element={<Blog/>} />
         <Route path='/contacts' element={<Contacts/>} />
+        <Route path='/mainblog' element={<MainBlogPage/>} />
       </Route>
     </Routes>
   </Router>

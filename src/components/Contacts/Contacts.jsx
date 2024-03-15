@@ -1,10 +1,15 @@
 import React from 'react'
-import Header from '../Header'
+import ContactHero from './ContactHero'
+import ContactForm from './ContactForm'
+import OurOffice from './OurOffice'
 
 const Contacts = () => {
   return (
     <div>
-        <Header/>
+        
+        <ContactHero/>
+        <ContactForm/>
+        <OurOffice/>
     </div>
   )
 }

@@ -18,8 +18,8 @@ import peop7 from "../../assets/Ellipse (5).png";
 import peop8 from "../../assets/Ellipse (6).png";
 import peop9 from "../../assets/Ellipse (7).png";
 
-
 import infoBG from "/footerBG.png";
+import { Link } from "react-router-dom";
 const BlogInfo = () => {
   return (
     <div
@@ -42,6 +42,7 @@ const BlogInfo = () => {
             Here.
           </p>
           <div className="grid grid-cols-3 gap-8 py-6">
+            <Link to="/mainblog">
             <div className="bg-white rounded-2xl">
               <img src={card1} alt="" className="w-full rounded-t-2xl" />
               <div className="flex flex-col gap-4 py-8 px-8">
@@ -62,12 +63,13 @@ const BlogInfo = () => {
                   <h1>2nd February,2024</h1>
                 </div>
               </div>
-            </div>
-            <div className="bg-white rounded-2xl">
+            </div></Link>
+            <Link to="/mainblog"><div className="bg-white rounded-2xl">
               <img src={card2} alt="" className="w-full rounded-t-2xl" />
               <div className="flex flex-col gap-4 py-8 px-8">
                 <h1 className="text-[#25313C] text-[20px] leading-[23.04px]">
-                Investing in Mauritius: A Guide to the Island's Booming Property Market
+                  Investing in Mauritius: A Guide to the Island's Booming
+                  Property Market
                 </h1>
                 <p className="text-[#25313C] text-[14px] leading-[23.04px]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -82,13 +84,13 @@ const BlogInfo = () => {
                   <h1>5th March,2024</h1>
                 </div>
               </div>
-            </div>
-            <div className="bg-white rounded-2xl">
+            </div></Link>
+            <Link to="/mainblog"><div className="bg-white rounded-2xl">
               <img src={card3} alt="" className="w-full rounded-t-2xl" />
               <div className="flex flex-col gap-4 py-8 px-8">
                 <h1 className="text-[#25313C] text-[20px] leading-[23.04px]">
-                Coastal Living: Exploring Mauritius' 
-Most Stunning Beachfront Homes
+                  Coastal Living: Exploring Mauritius' Most Stunning Beachfront
+                  Homes
                 </h1>
                 <p className="text-[#25313C] text-[14px] leading-[23.04px]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -103,12 +105,13 @@ Most Stunning Beachfront Homes
                   <h1>13th April, 2024</h1>
                 </div>
               </div>
-            </div>
-            <div className="bg-white rounded-2xl">
+            </div></Link>
+            <Link to="/mainblog"><div className="bg-white rounded-2xl">
               <img src={card4} alt="" className="w-full rounded-t-2xl" />
               <div className="flex flex-col gap-4 py-8 px-8">
                 <h1 className="text-[#25313C] text-[20px] leading-[23.04px]">
-                Mauritius for Expats: Navigating the Property Market as a Newcomer
+                  Mauritius for Expats: Navigating the Property Market as a
+                  Newcomer
                 </h1>
                 <p className="text-[#25313C] text-[14px] leading-[23.04px]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -123,12 +126,13 @@ Most Stunning Beachfront Homes
                   <h1>28th April,2024</h1>
                 </div>
               </div>
-            </div>
-            <div className="bg-white rounded-2xl">
+            </div></Link>
+            <Link to="/mainblog"><div className="bg-white rounded-2xl">
               <img src={card5} alt="" className="w-full rounded-t-2xl" />
               <div className="flex flex-col gap-4 py-8 px-8">
                 <h1 className="text-[#25313C] text-[20px] leading-[23.04px]">
-                Sustainable Living in Mauritius: Eco-Friendly Homes and Green Initiatives
+                  Sustainable Living in Mauritius: Eco-Friendly Homes and Green
+                  Initiatives
                 </h1>
                 <p className="text-[#25313C] text-[14px] leading-[23.04px]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -143,12 +147,13 @@ Most Stunning Beachfront Homes
                   <h1>2nd May,2024</h1>
                 </div>
               </div>
-            </div>
-            <div className="bg-white rounded-2xl">
+            </div></Link>
+            <Link to="/mainblog"><div className="bg-white rounded-2xl">
               <img src={card6} alt="" className="w-full rounded-t-2xl" />
               <div className="flex flex-col gap-4 py-8 px-8">
                 <h1 className="text-[#25313C] text-[20px] leading-[23.04px]">
-                The Art of Mauritian Architecture: Blending Tradition with Modernity
+                  The Art of Mauritian Architecture: Blending Tradition with
+                  Modernity
                 </h1>
                 <p className="text-[#25313C] text-[14px] leading-[23.04px]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -163,12 +168,13 @@ Most Stunning Beachfront Homes
                   <h1>23rd May,2024</h1>
                 </div>
               </div>
-            </div>
-            <div className="bg-white rounded-2xl">
+            </div></Link>
+            <Link to="/mainblog"><div className="bg-white rounded-2xl">
               <img src={card7} alt="" className="w-full rounded-t-2xl" />
               <div className="flex flex-col gap-4 py-8 px-8">
                 <h1 className="text-[#25313C] text-[20px] leading-[23.04px]">
-                Inside Mauritius' Luxury Villas: A Peek into High-End Island Living
+                  Inside Mauritius' Luxury Villas: A Peek into High-End Island
+                  Living
                 </h1>
                 <p className="text-[#25313C] text-[14px] leading-[23.04px]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -183,12 +189,13 @@ Most Stunning Beachfront Homes
                   <h1>26th June,2024</h1>
                 </div>
               </div>
-            </div>
-            <div className="bg-white rounded-2xl">
+            </div></Link>
+            <Link to="/mainblog"><div className="bg-white rounded-2xl">
               <img src={card8} alt="" className="w-full rounded-t-2xl" />
               <div className="flex flex-col gap-4 py-8 px-8">
                 <h1 className="text-[#25313C] text-[20px] leading-[23.04px]">
-                Real Estate Market Analysis: Understanding Mauritius' Property Trends
+                  Real Estate Market Analysis: Understanding Mauritius' Property
+                  Trends
                 </h1>
                 <p className="text-[#25313C] text-[14px] leading-[23.04px]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -203,12 +210,13 @@ Most Stunning Beachfront Homes
                   <h1>25th July,2024</h1>
                 </div>
               </div>
-            </div>
-            <div className="bg-white rounded-2xl">
+            </div></Link>
+            <Link to="/mainblog"><div className="bg-white rounded-2xl">
               <img src={card9} alt="" className="w-full rounded-t-2xl" />
               <div className="flex flex-col gap-4 py-8 px-8">
                 <h1 className="text-[#25313C] text-[20px] leading-[23.04px]">
-                Your Dream Vacation Home in Mauritius: What to Know Before You Buy
+                  Your Dream Vacation Home in Mauritius: What to Know Before You
+                  Buy
                 </h1>
                 <p className="text-[#25313C] text-[14px] leading-[23.04px]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -223,7 +231,7 @@ Most Stunning Beachfront Homes
                   <h1>29th August,2024</h1>
                 </div>
               </div>
-            </div>
+            </div></Link>
           </div>
         </div>
       </div>
