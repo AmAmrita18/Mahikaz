@@ -30,7 +30,7 @@ const Details = () => {
         objectFit: "cover",
       }}
     >
-      <Header transparent={true}/>
+      <Header transparent={false}/>
       <div className="w-[80%] h-full mx-auto max-w-[1200px] pt-28 pb-12 flex flex-col">
         <div className="flex flex-row justify-between mb-10 ">
           <div className="flex flex-col gap-y-8">

@@ -33,7 +33,7 @@ const BlogInfo = () => {
       }}
     >
       <div className="w-full bg-[#937D6466]">
-      <Header transparent={true}/>
+      <Header transparent={false}/>
         <div className="w-[80%] mx-auto max-w-[1200px] h-full py-24 flex flex-col gap-4">
           <h1 className="text-[60px] leading-[69.12px] text-white">
             Mahikaz Insights: Navigating the Mauritian Property Landscape
@@ -47,7 +47,7 @@ const BlogInfo = () => {
             <Link to="/mainblog">
             <div className="bg-white rounded-2xl">
               <img src={card1} alt="" className="w-full rounded-t-2xl" />
-              <div className="flex flex-col gap-4 py-8 px-8">
+              <div className="flex flex-col gap-4 py-8 px-5">
                 <h1 className="text-[#25313C] text-[20px] leading-[23.04px]">
                   The Hidden Gems of Mauritius Real Estate: Discovering Unique
                   Properties
@@ -68,7 +68,7 @@ const BlogInfo = () => {
             </div></Link>
             <Link to="/mainblog"><div className="bg-white rounded-2xl">
               <img src={card2} alt="" className="w-full rounded-t-2xl" />
-              <div className="flex flex-col gap-4 py-8 px-8">
+              <div className="flex flex-col gap-4 py-8 px-5">
                 <h1 className="text-[#25313C] text-[20px] leading-[23.04px]">
                   Investing in Mauritius: A Guide to the Island's Booming
                   Property Market
@@ -89,7 +89,7 @@ const BlogInfo = () => {
             </div></Link>
             <Link to="/mainblog"><div className="bg-white rounded-2xl">
               <img src={card3} alt="" className="w-full rounded-t-2xl" />
-              <div className="flex flex-col gap-4 py-8 px-8">
+              <div className="flex flex-col gap-4 py-8 px-5">
                 <h1 className="text-[#25313C] text-[20px] leading-[23.04px]">
                   Coastal Living: Exploring Mauritius' Most Stunning Beachfront
                   Homes
@@ -110,7 +110,7 @@ const BlogInfo = () => {
             </div></Link>
             <Link to="/mainblog"><div className="bg-white rounded-2xl">
               <img src={card4} alt="" className="w-full rounded-t-2xl" />
-              <div className="flex flex-col gap-4 py-8 px-8">
+              <div className="flex flex-col gap-4 py-8 px-5">
                 <h1 className="text-[#25313C] text-[20px] leading-[23.04px]">
                   Mauritius for Expats: Navigating the Property Market as a
                   Newcomer
@@ -131,7 +131,7 @@ const BlogInfo = () => {
             </div></Link>
             <Link to="/mainblog"><div className="bg-white rounded-2xl">
               <img src={card5} alt="" className="w-full rounded-t-2xl" />
-              <div className="flex flex-col gap-4 py-8 px-8">
+              <div className="flex flex-col gap-4 py-8 px-5">
                 <h1 className="text-[#25313C] text-[20px] leading-[23.04px]">
                   Sustainable Living in Mauritius: Eco-Friendly Homes and Green
                   Initiatives
@@ -152,7 +152,7 @@ const BlogInfo = () => {
             </div></Link>
             <Link to="/mainblog"><div className="bg-white rounded-2xl">
               <img src={card6} alt="" className="w-full rounded-t-2xl" />
-              <div className="flex flex-col gap-4 py-8 px-8">
+              <div className="flex flex-col gap-4 py-8 px-5">
                 <h1 className="text-[#25313C] text-[20px] leading-[23.04px]">
                   The Art of Mauritian Architecture: Blending Tradition with
                   Modernity
@@ -173,7 +173,7 @@ const BlogInfo = () => {
             </div></Link>
             <Link to="/mainblog"><div className="bg-white rounded-2xl">
               <img src={card7} alt="" className="w-full rounded-t-2xl" />
-              <div className="flex flex-col gap-4 py-8 px-8">
+              <div className="flex flex-col gap-4 py-8 px-5">
                 <h1 className="text-[#25313C] text-[20px] leading-[23.04px]">
                   Inside Mauritius' Luxury Villas: A Peek into High-End Island
                   Living
@@ -194,7 +194,7 @@ const BlogInfo = () => {
             </div></Link>
             <Link to="/mainblog"><div className="bg-white rounded-2xl">
               <img src={card8} alt="" className="w-full rounded-t-2xl" />
-              <div className="flex flex-col gap-4 py-8 px-8">
+              <div className="flex flex-col gap-4 py-8 px-5">
                 <h1 className="text-[#25313C] text-[20px] leading-[23.04px]">
                   Real Estate Market Analysis: Understanding Mauritius' Property
                   Trends
@@ -215,7 +215,7 @@ const BlogInfo = () => {
             </div></Link>
             <Link to="/mainblog"><div className="bg-white rounded-2xl">
               <img src={card9} alt="" className="w-full rounded-t-2xl" />
-              <div className="flex flex-col gap-4 py-8 px-8">
+              <div className="flex flex-col gap-4 py-8 px-5">
                 <h1 className="text-[#25313C] text-[20px] leading-[23.04px]">
                   Your Dream Vacation Home in Mauritius: What to Know Before You
                   Buy

@@ -14,7 +14,7 @@ const ContactHero = () => {
       }}
     >
       <div className="w-full h-full bg-[#32210DB2]">
-        <Header transparent={true} />
+        <Header transparent={false} />
         <div className="w-[80%] h-full mx-auto max-w-[1200px]  md:pt-36 md:pb-56 pt-20 pb-32 flex flex-col gap-6 justify-center items-center">
           <h1 className="md:text-[60px] text-[45px] md:px-60 text-center text-white md:leading-[80px] tracking-[-2.01px]">
             Start Your Property Journey with Mahikaz

@@ -18,7 +18,7 @@ const AllProperties = () => {
       }}
     >
       <div className="w-full h-full bg-[#937D6480]">
-        <Header transparent={true} />
+        <Header transparent={false} />
 
         <div className="w-[80%] h-full mx-auto max-w-[1200px] py-28">
           <h1 className="text-[50px] text-center pb-4 text-black leading-[57.6px] tracking-[-1.26px]">
