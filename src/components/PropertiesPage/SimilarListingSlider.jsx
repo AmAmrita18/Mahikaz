@@ -48,7 +48,7 @@ const SimilarListingSlider = () => {
                   <img
                     src={est.images[0]}
                     alt="thumbnail"
-                    className="w-full h-52 rounded-t-[30px] brightness-50"
+                    className="w-full h-52 object-cover rounded-t-[30px] brightness-50"
                   />
                   <h3 className="text-black text-[24px] p-8 leading-[27.65px] tracking-[-0.6px] ">
                     {est.title}

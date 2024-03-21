@@ -204,7 +204,7 @@ const [displayImage, setDisplayImage] = useState(0)
 
               <div className="flex flex-row gap-3 items-center bg-[#F5F5F5] mx-6 my-3 rounded-xl px-3 py-4">
                 <div>
-                  <img src={profile} width={40} height={40} alt="" />
+                  <img src={profile} width={40} height={40} alt="" className="object-cover w-[40px] h-[40px]"/>
                 </div>
                 <div className="flex flex-col gap-1">
                   <h1 className="text-black text-[15px] leading-[17.28px] tracking-[-0.38px]">
