@@ -72,14 +72,14 @@ const Header = ({transparent}) => {
                 PROPERTIES
               </NavLink>
             </li>
-            <li className="transition-all duration-700 ease-in-out   hover:scale-95 ">
+            {/* <li className="transition-all duration-700 ease-in-out   hover:scale-95 ">
               <NavLink
                 to="/blog"
                 className={({ isActive }) => `${isActive && "font-extrabold"}`}
               >
                 BLOG
               </NavLink>
-            </li>
+            </li> */}
            <div>
             <NavLink to="/contacts">
             <img  src={menu} width={60} height={60} alt="" />
