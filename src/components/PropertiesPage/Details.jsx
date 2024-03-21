@@ -6,20 +6,26 @@ import { ImHome } from "react-icons/im";
 import { SlCalender } from "react-icons/sl";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaCircleCheck } from "react-icons/fa6";
-import propertyHouse from "../../assets/Property House.png";
-import facility1 from "../../assets/Rectangle (1).png";
-import facility2 from "../../assets/Rectangle (2).png";
-import facility3 from "../../assets/Rectangle (3).png";
-import facility4 from "../../assets/Rectangle (4).png";
-import facility5 from "../../assets/Rectangle (5).png";
-import facility6 from "../../assets/Rectangle (6).png";
-import facility7 from "../../assets/Rectangle (7).png";
+// import propertyHouse from "../../assets/Property House.png";
+// import facility1 from "../../assets/Rectangle (1).png";
+// import facility2 from "../../assets/Rectangle (2).png";
+// import facility3 from "../../assets/Rectangle (3).png";
+// import facility4 from "../../assets/Rectangle (4).png";
+// import facility5 from "../../assets/Rectangle (5).png";
+// import facility6 from "../../assets/Rectangle (6).png";
+// import facility7 from "../../assets/Rectangle (7).png";
 import profile from "../../assets/profile.png";
 import Header from "../Header";
-const Details = () => {
+import { beachfront } from "../../assets/Mahikaz assets/Beachfront Penthouse";
+
+
+const Details = ({ estate }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+const [displayImage, setDisplayImage] = useState(0)
+  const { title, description, features, beds, washroom, livingroom, images, address, price, averageprice } = estate;
+
   return (
     <div
       className="w-full"
@@ -30,23 +36,23 @@ const Details = () => {
         objectFit: "cover",
       }}
     >
-      <Header transparent={false}/>
+      <Header transparent={false} />
       <div className="w-[80%] h-full mx-auto max-w-[1200px] pt-28 pb-12 flex flex-col">
         <div className="flex flex-row justify-between mb-10 ">
           <div className="flex flex-col gap-y-8">
             <h1 className="text-[#251408] text-[50px] leading-[25.6px] tracking-[-0.8px]">
-              Modern House
+              {title}
             </h1>
             <h2 className="text-[#251408] text-[18px] leading-[24px] tracking-[-0.38px]">
-              3002 Foster Ave, Brooklyn, NY 11210, USA
+              {address}
             </h2>
           </div>
           <div className="flex flex-col gap-y-8">
             <h1 className="text-[#251408] text-[50px] leading-[25.6px] tracking-[-0.8px]">
-              $450,000
+              {price}
             </h1>
-            <h2 className="text-[#251408] text-[18px] leading-[24px] tracking-[-0.38px]">
-              $2,800/sq ft
+            <h2 className="text-[#251408] text-[18px] leading-[24px] text-end tracking-[-0.38px]">
+              {averageprice}
             </h2>
           </div>
         </div>
@@ -54,32 +60,22 @@ const Details = () => {
         <div className="flex flex-row">
           <div className="w-[60%]">
             <div className="">
-              <img src={propertyHouse} className="shadow-2xl" alt="" />
+              <img src={images[displayImage]} width={704} height={520} className="w-[704px] h-[520px] shadow-2xl rounded-tr-[57px] object-cover" alt="" />
             </div>
-            <div className="flex flex-row gap-6 py-6">
-              <div className="shadow-2xl">
-                <img src={facility1} alt="" />
+
+            <div  className="flex w-full flex-row gap-6 py-6">
+              {images.map((image, index) => index!=displayImage&& (
+                <div onClick={() => setDisplayImage(index)} key={`img`+index} className="shadow-2xl  cursor-pointer">
+                <img src={image}  alt="" className="w-[80px] h-[80px] object-cover rounded-tr-2xl"/>
               </div>
-              <div className="shadow-2xl">
-                <img src={facility2} alt="" />
-              </div>
-              <div className="shadow-2xl">
-                <img src={facility3} alt="" />
-              </div>
-              <div className="shadow-2xl">
-                <img src={facility4} alt="" />
-              </div>
-              <div className="shadow-2xl">
-                <img src={facility5} alt="" />
-              </div>
-              <div className="shadow-2xl">
-                <img src={facility6} alt="" />
-              </div>
-              <div className="shadow-2xl">
-                <img src={facility7} alt="" />
-              </div>
+              ))}
+              
+
             </div>
-            <div className=" bg-white shadow-2xl  rounded-xl">
+
+
+            {/* details div  */}
+            {/* <div className=" bg-white shadow-2xl  rounded-xl">
               <div className="flex justify-between px-6 py-6 border-b border-[#E4E4E4]">
                 <h1 className="text-black text-[20px] leading-[23.04px] tracking-[-0.5px]">
                   Details
@@ -116,8 +112,11 @@ const Details = () => {
                   </h1>
                 </div>
               </div>
-            </div>
-            <div className=" my-12 shadow-2xl   bg-white rounded-xl ">
+            </div> */}
+
+
+            {/* features div  */}
+            {/* <div className=" my-12 shadow-2xl   bg-white rounded-xl ">
               <div className="flex justify-between px-6 py-8 border-b border-[#E4E4E4]">
                 <h1 className="text-black text-[20px] leading-[23.04px] tracking-[-0.5px]">
                   Features
@@ -191,14 +190,18 @@ const Details = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
 
+
           <div className="w-[40%]  ">
+
+            {/* mahikaz form  */}
             <div
               className="w-full bg-white
             mx-6  shadow-2xl rounded-2xl py-6"
             >
+
               <div className="flex flex-row gap-3 items-center bg-[#F5F5F5] mx-6 my-3 rounded-xl px-3 py-4">
                 <div>
                   <img src={profile} width={40} height={40} alt="" />
@@ -262,6 +265,8 @@ const Details = () => {
               </form>
             </div>
             <br />
+
+            {/* description  */}
             <div className="w-full  mb-10 mx-6  shadow-2xl rounded-2xl ">
               <div className="mt-4 bg-white rounded-xl ">
                 <div className="flex justify-between px-6 py-8 mx-6 border-b border-[#E4E4E4]">
@@ -270,27 +275,13 @@ const Details = () => {
                   </h1>
                 </div>
                 <div className="flex flex-col px-6 py-6 gap-4 ">
-                  <p className="text-black text-[15px] leading-[22px] tracking-[-0.38px]">
-                    At vero eos et iusto odio dignissimos ducimus, qui haec
-                    putat, ut ipsi auctori huius disciplinae placet: constituam,
-                    quid sit numeranda nec me ab illo inventore veritatis et
-                    expedita distinctio nam libero tempore, cum memoriter, tum
-                    etiam ac ratione.
-                  </p>
-                  <p className="text-black text-[15px] leading-[22px] tracking-[-0.38px]">
-                    Si sine metu degendae praesidia firmissima filium morte
-                    multavit si sine causa? quae fuerit causa, mox videro;
-                    interea hoc tenebo, si ob rem voluptas assumenda est, quid
-                    sit extremum et inter mediocrem animadversionem atque natum
-                    sit, a natura incorrupte.
-                  </p>
-                  <p className="text-black text-[15px] leading-[22px] tracking-[-0.38px]">
-                    Omne animal, simul atque in sanguinem suum tam inportuno
-                    tamque crudeli; sin, ut earum motus et accusamus et
-                    argumentandum et dolore suo sanciret militaris imperii
-                    disciplinam exercitumque in liberos atque haec ratio late
-                    patet in quo pertineant non possim.
-                  </p>
+                  {estate.description.map((desc, index) => (
+                    <div key={`PAR${estate.title + index}`}>
+                      <p className="text-black text-[15px] leading-[22px] tracking-[-0.38px]">{desc}</p>
+                      <br />
+                    </div>
+                  ))}
+
                 </div>
               </div>
             </div>

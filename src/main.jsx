@@ -17,11 +17,12 @@ const Root = () => (
       <Route path='/' element={<Layout />}>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/mainproperty' element={<Properties/>} />
+        {/* <Route path='/mainproperty' element={<Properties/>} /> */}
         <Route path='/blog' element={<Blog/>} />
         <Route path='/contacts' element={<Contacts/>} />
         <Route path='/mainblog' element={<MainBlogPage/>} />
         <Route path='/properties' element={<AllProperties/>} />
+        <Route path='property/:id' element={<Properties/>} />
       </Route>
     </Routes>
   </Router>
