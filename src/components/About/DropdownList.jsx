@@ -10,8 +10,8 @@ const DropdownList = () => {
   return (
     <div className="w-full">
       <div className="w-full h-full  max-w-[1200px] py-12 flex md:flex-row flex-col  ">
-        <div className="w-full md:rounded-l-3xl rounded-l-none md:rounded-t-none rounded-t-3xl border-r-2 border-[#E4E4E4] bg-white">
-          <button onClick={() => setIsOpen((prev) => !prev)} className="bg-white md:py-12 py-4 pl-8 pr-8  text-start md:rounded-l-3xl rounded-l-none md:rounded-t-none rounded-t-3xl flex flex-row gap-4 items-center text-[17px] leading-[19.58px] tracking-[-0.43px] text-black">
+        <div className="w-full md:rounded-l-3xl rounded-l-none md:rounded-tr-none rounded-t-3xl border-r-2 border-[#E4E4E4] bg-white">
+          <button onClick={() => setIsOpen((prev) => !prev)} className="bg-white md:py-12 py-4 pl-8 pr-8  text-start md:rounded-l-3xl rounded-l-none md:rounded-tr-none rounded-t-3xl flex flex-row gap-4 items-center text-[17px] leading-[19.58px] tracking-[-0.43px] text-black">
             Looking For
             {!isOpen ? <RiArrowDropDownLine className="text-[28px] font-thin" /> : <RiArrowDropUpLine className="text-[28px] font-thin text-black" />}
           </button>

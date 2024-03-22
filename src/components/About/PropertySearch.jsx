@@ -9,7 +9,7 @@ const PropertySearch = () => {
     >
       <div className="md:pt-24 pt-16 flex md:flex-row-reverse flex-col md:p-0 p-10 pl-0">
         <div
-          className="md:w-[50%] md:h-[750px] h-[500px] w-full md:rounded-tr-[54px]"
+          className="md:w-[50%] md:h-[750px] h-[500px] w-full md:rounded-tl-[54px]"
           style={{
             backgroundImage: `url('${propertyPeople}')`,
             backgroundRepeat: "no-repeat",
@@ -19,7 +19,7 @@ const PropertySearch = () => {
         >
         </div>
 
-        <div className="md:w-[50%] w-full md:pt-44 md:pb-44 pb-24 h-full mx-auto max-w-[1200px] flex flex-col gap-8 md:pr-12 pr-10 pl-10 md:pl-32">
+        <div className="md:w-[50%] w-full lg:pt-44 md:pb-44 pb-24 h-full mx-auto max-w-[1200px] flex flex-col gap-8 md:pr-12 pr-10 pl-10 lg:pl-32 md:pl-20">
           <h1 className="text-[50px] text-black leading-[57.6px] tracking-[-1.26px]">
           Personalized and Curated Property Search          </h1>
           <p className="text-[20px] text-black leading-[28px] tracking-[-0.5px]">

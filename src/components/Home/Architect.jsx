@@ -7,7 +7,7 @@ const Architect = () => {
     <div className="w-full bg-[#937D64AD] ">
       <div className="relative w-[80%] h-full mx-auto max-w-[1200px] flex md:flex-row flex-col-reverse gap-20">
 
-        <div className="md:w-[55%] md:pt-28 md:pb-28 pb-12 md:pl-10  flex flex-col gap-12">
+        <div className="md:w-[55%] md:pt-28 md:pb-28 pb-12 lg:pl-10  flex flex-col lg:gap-12 gap-6">
           <h1 className="text-[32px] text-white leading-[36.86px] tracking-widest">
             MEET KUMARAVEL, THE ARCHITECT BEHIND THE MAHIKAZ VISION
           </h1>
@@ -24,13 +24,13 @@ const Architect = () => {
           </p>
         </div>
 
-        <div className="md:w-[45%] md:pt-28 pt-12 md:absolute md:right-0 md:pl-20">
+        <div className="md:w-[45%] md:pt-28 pt-12 md:absolute md:right-0 lg:pl-20 md:pl-4 pl-0">
           <img src={architect} width={445} height={651} className="w-[445px] brightness-75" alt="" />
         </div>
       </div>
 
       <div
-        className="w-full md:block hidden h-60"
+        className="w-full lg:block hidden h-60"
         style={{
           backgroundImage: `url('${bgWhite}')`,
           backgroundRepeat: "no-repeat",

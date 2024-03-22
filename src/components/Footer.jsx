@@ -34,7 +34,7 @@ const Footer = () => {
             anim id est laborum.
           </p>
         </div>
-        <div className="flex md:flex-row flex-col md:gap-28 gap-8 md:py-16 py-12">
+        <div className="flex md:flex-row flex-col lg:gap-28 gap-8 md:py-16 py-12">
           <div>
             <img
               src={footerLogo}

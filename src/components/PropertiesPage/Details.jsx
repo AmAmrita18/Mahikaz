@@ -46,6 +46,7 @@ const Details = ({ estate }) => {
         objectFit: "cover",
       }}
     >
+      <div className="w-full h-full bg-[#937D6480]">
       <Header transparent={false} />
       <div className="w-[80%] h-full mx-auto max-w-[1200px] md:pt-28 pt-12 pb-12 flex flex-col">
         <div className="flex flex-row justify-between mb-10 ">
@@ -67,8 +68,8 @@ const Details = ({ estate }) => {
           </div>
         </div>
 
-        <div className="flex md:flex-row flex-col">
-          <div className="md:w-[60%]">
+        <div className="flex lg:flex-row flex-col">
+          <div className="lg:w-[60%]">
             <div className="">
               <img
                 src={images[displayImage]}
@@ -216,11 +217,11 @@ const Details = ({ estate }) => {
             </div> */}
           </div>
 
-          <div className="md:w-[40%]  ">
+          <div className="lg:w-[40%] lg:py-0 md:py-16 ">
             {/* mahikaz form  */}
             <div
               className="w-full bg-white
-            md:mx-6  shadow-2xl rounded-2xl py-6 md:mt-0 mt-8"
+            lg:mx-6  shadow-2xl rounded-2xl py-6 md:mt-0 mt-8"
             >
               <div className="flex flex-row gap-3 items-center bg-[#F5F5F5] mx-6 my-3 rounded-xl px-3 py-4">
                 <div>
@@ -293,7 +294,7 @@ const Details = ({ estate }) => {
             <br />
 
             {/* description  */}
-            <div className="w-full  mb-10 md:mx-6  shadow-2xl rounded-2xl ">
+            <div className="w-full  mb-10 lg:mx-6  shadow-2xl rounded-2xl ">
               <div className="mt-4 bg-white rounded-xl ">
                 <div className="flex justify-between px-6 py-8 mx-6 border-b border-[#E4E4E4]">
                   <h1 className="text-black text-[20px] leading-[23.04px] tracking-[-0.5px]">
@@ -314,6 +315,7 @@ const Details = ({ estate }) => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

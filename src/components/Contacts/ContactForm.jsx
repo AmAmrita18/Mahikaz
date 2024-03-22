@@ -1,4 +1,4 @@
-import React , {useState} from "react";
+import React, { useState } from "react";
 import ImageContact from "/contact.png";
 import { MdOutlineFacebook } from "react-icons/md";
 import { RiInstagramFill } from "react-icons/ri";
@@ -7,12 +7,12 @@ const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
- 
+
   return (
     <div className="w-full bg-white">
-      <div className="w-[80%] h-full mx-auto max-w-[1200px] md:py-32 py-24 flex md:flex-row flex-col justify-between ">
+      <div className="w-[80%] h-full mx-auto max-w-[1200px] md:py-32 py-24 flex lg:flex-row flex-col justify-between ">
         <div
-          className="md:w-[412px] md:h-[595px] w-[310px] h-[450px] rounded-t-full"
+          className="md:w-[412px] lg:mx-0 mx-auto md:h-[595px] w-[310px] h-[450px] rounded-t-full"
           style={{
             backgroundImage: `url('${ImageContact}')`,
             backgroundRepeat: "no-repeat",
@@ -23,7 +23,9 @@ const ContactForm = () => {
           <div className="w-full h-full bg-[#2A201499] rounded-t-full"></div>
         </div>
         <div>
-          <h1 className="text-[50px] leading-[60px] md:pt-0 pt-12">CONTACT US</h1>
+          <h1 className="text-[50px] leading-[60px] lg:pt-0 pt-12">
+            CONTACT US
+          </h1>
           <div className=" w-full py-16 flex flex-col gap-y-10 ">
             <div className="text-black pb-6  w-full border-b-2 border-black md:text-[18px] text-[16px] font-[500]">
               <input
@@ -33,7 +35,7 @@ const ContactForm = () => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Full Name"
-                className="bg-transparent lg:w-[100%] md:w-[230px] w-full transition-all duration-700 ease-in-out  hover:scale-95 placeholder:text-black placeholder:text-[18px] border-none !outline-transparent outline-0 focus:outline-0"
+                className="bg-transparent  w-full transition-all duration-700 ease-in-out  hover:scale-95 placeholder:text-black placeholder:text-[18px] border-none !outline-transparent outline-0 focus:outline-0"
               />
             </div>
             <div className="text-black pb-6 w-full border-b-2 border-black md:text-[18px] text-[16px] font-[500]">
@@ -44,7 +46,7 @@ const ContactForm = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Email"
-                className="bg-transparent lg:w-[100%] md:w-[230px] w-full transition-all duration-700 ease-in-out  hover:scale-95 placeholder:text-black  placeholder:text-[18px] border-none !outline-transparent outline-0 focus:outline-0"
+                className="bg-transparent w-full transition-all duration-700 ease-in-out  hover:scale-95 placeholder:text-black  placeholder:text-[18px] border-none !outline-transparent outline-0 focus:outline-none"
               />
             </div>
             <div className="text-black pb-6 w-full border-b-2 border-black md:text-[18px] text-[16px] font-[500]">
@@ -55,26 +57,31 @@ const ContactForm = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Message"
-                className="bg-transparent lg:w-[100%] md:w-[230px] w-full transition-all duration-700 ease-in-out  hover:scale-95 placeholder:text-black  placeholder:text-[18px] border-none !outline-transparent outline-0 focus:outline-0"
+                className="bg-transparent  w-full transition-all duration-700 ease-in-out  hover:scale-95 placeholder:text-black  placeholder:text-[18px] border-none !outline-transparent outline-0 focus:outline-0"
               />
             </div>
             <div className="flex justify-start">
-            <button className="bg-[#251408] transition-all duration-700 ease-in-out  hover:scale-95 w-[200px] text-[17px] leading-[19.58px] tracking-[-0.43px] text-white px-8 py-6 mt-8 rounded-tr-xl">
-            CONTACT US
-          </button>
+              <button className="bg-[#251408] transition-all duration-700 ease-in-out  hover:scale-95 w-[200px] text-[17px] leading-[19.58px] tracking-[-0.43px] text-white px-8 py-6 mt-8 rounded-tr-xl">
+                CONTACT US
+              </button>
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-y-12 md:mt-32">
+        <div className="flex lg:flex-col md:flex-row flex-col gap-x-12 gap-y-12 lg:mt-32">
           <div className="flex flex-col gap-y-3">
             <h1 className="text-[25px] text-black leading-[30px]">Contact</h1>
-            <h2 className="text-[18px] text-black leading-[30px]"> +230 5123 4567</h2>
+            <h2 className="text-[18px] text-black leading-[30px]">
+              {" "}
+              +230 5123 4567
+            </h2>
           </div>
           <div className="flex flex-col gap-y-3">
             <h1 className="text-[25px] text-black leading-[30px]">Based in</h1>
-            <h2 className="text-[18px] text-black leading-[30px]">SH 33, Centrepoint, Trianon, Mauritius</h2>
+            <h2 className="text-[18px] text-black leading-[30px]">
+              SH 33, Centrepoint, Trianon, Mauritius
+            </h2>
           </div>
-          <div className="flex flex-row gap-x-6 md:mt-20">
+          <div className="flex flex-row gap-x-6 lg:mt-20">
             <div className="w-[30px] h-[30px]  py-1 rounded-full">
               <MdOutlineFacebook className="w-[25px] h-[25px] mx-auto" />
             </div>

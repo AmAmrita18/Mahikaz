@@ -19,7 +19,7 @@ const AboutInfo = () => {
         >
         </div>
 
-        <div className="md:w-[50%] h-full mx-auto max-w-[1200px] flex flex-col gap-12 md:pl-12 md:pr-32 px-10">
+        <div className="md:w-[50%] h-full mx-auto max-w-[1200px] flex flex-col gap-12 md:pl-12 lg:pr-32 md:pr-16 pb-24 px-10">
           <h1 className="md:text-[50px] text-[40px] text-black leading-[57.6px] tracking-[-1.26px]">
             Navigating Your Real Estate Dreams in Mauritius
           </h1>

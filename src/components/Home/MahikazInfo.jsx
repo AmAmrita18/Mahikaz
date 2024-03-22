@@ -16,7 +16,7 @@ const MahikazInfo = () => {
           <h1 className="md:text-[60px] text-[45px] leading-[69.12px] tracking-widest text-white">
             MAHIKAZ
           </h1>
-          <p className="text-[26px] md:w-[55%] leading-[29.95px] tracking-widest text-white">
+          <p className="text-[26px] lg:w-[55%] leading-[29.95px] tracking-widest text-white">
             Whether buying or selling, Mahikaz brings a distinctive touch to its
             service. We engage deeply with each client, to find pristine
             properties in prime locales and secures the finest deals. When
