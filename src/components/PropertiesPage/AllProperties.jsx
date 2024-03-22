@@ -33,7 +33,7 @@ const AllProperties = () => {
               <Link to={`/property/${est.id}`} key={est.id}>
                 <div
                   key={est.id}
-                  className="flex flex-col shadow-2xl  bg-[#fff] rounded-[32px]"
+                  className="flex flex-col shadow-2xl  transition-all duration-700 ease-in-out  hover:scale-95  bg-[#fff] rounded-[32px]"
                 >
                   <img
                     src={est.images[0]}

@@ -34,7 +34,7 @@ const AboutInfo = () => {
             Mauritius' diverse real estate market, and our commitment to helping
             you discover a place where you can create unforgettable memories.
           </p>
-          <button className="bg-[#251408] w-[200px] text-[17px] leading-[19.58px] tracking-[-0.43px] text-white px-8 py-6 rounded-tr-xl">
+          <button className="bg-[#251408] w-[200px] transition-all duration-700 ease-in-out  hover:scale-95  text-[17px] leading-[19.58px] tracking-[-0.43px] text-white px-8 py-6 rounded-tr-xl">
             LEARN MORE
           </button>
         </div>

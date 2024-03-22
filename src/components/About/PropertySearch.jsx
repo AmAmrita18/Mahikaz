@@ -30,7 +30,7 @@ const PropertySearch = () => {
 
 With our extensive local knowledge and personalized approach, we guide you through every step of the journey, ensuring a seamless and enjoyable experience.
           </p>
-          <button className="bg-[#251408] w-[200px] text-[17px] leading-[19.58px] tracking-[-0.43px] text-white px-8 py-6 rounded-tr-xl">
+          <button className="bg-[#251408] transition-all duration-700 ease-in-out  hover:scale-95  w-[200px] text-[17px] leading-[19.58px] tracking-[-0.43px] text-white px-8 py-6 rounded-tr-xl">
             LEARN MORE
           </button>
         </div>
