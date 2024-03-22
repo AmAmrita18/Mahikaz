@@ -10,9 +10,9 @@ const ContactForm = () => {
  
   return (
     <div className="w-full bg-white">
-      <div className="w-[80%] h-full mx-auto max-w-[1200px] py-32 flex flex-row justify-between ">
+      <div className="w-[80%] h-full mx-auto max-w-[1200px] md:py-32 py-24 flex md:flex-row flex-col justify-between ">
         <div
-          className="w-[412px] h-[595px] rounded-t-full"
+          className="md:w-[412px] md:h-[595px] w-[310px] h-[450px] rounded-t-full"
           style={{
             backgroundImage: `url('${ImageContact}')`,
             backgroundRepeat: "no-repeat",
@@ -23,7 +23,7 @@ const ContactForm = () => {
           <div className="w-full h-full bg-[#2A201499] rounded-t-full"></div>
         </div>
         <div>
-          <h1 className="text-[50px] leading-[60px]">CONTACT US</h1>
+          <h1 className="text-[50px] leading-[60px] md:pt-0 pt-12">CONTACT US</h1>
           <div className=" w-full py-16 flex flex-col gap-y-10 ">
             <div className="text-black pb-6  w-full border-b-2 border-black md:text-[18px] text-[16px] font-[500]">
               <input
@@ -65,7 +65,7 @@ const ContactForm = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-y-12 mt-32">
+        <div className="flex flex-col gap-y-12 md:mt-32">
           <div className="flex flex-col gap-y-3">
             <h1 className="text-[25px] text-black leading-[30px]">Contact</h1>
             <h2 className="text-[18px] text-black leading-[30px]"> +230 5123 4567</h2>
@@ -74,7 +74,7 @@ const ContactForm = () => {
             <h1 className="text-[25px] text-black leading-[30px]">Based in</h1>
             <h2 className="text-[18px] text-black leading-[30px]">SH 33, Centrepoint, Trianon, Mauritius</h2>
           </div>
-          <div className="flex flex-row gap-x-6 mt-20">
+          <div className="flex flex-row gap-x-6 md:mt-20">
             <div className="w-[30px] h-[30px]  py-1 rounded-full">
               <MdOutlineFacebook className="w-[25px] h-[25px] mx-auto" />
             </div>

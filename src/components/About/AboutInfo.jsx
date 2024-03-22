@@ -7,9 +7,9 @@ const AboutInfo = () => {
       className="w-full bg-white"
      
     >
-      <div className="md:pt-32 py-12 flex md:flex-row flex-col">
+      <div className="md:pt-32 py-12 flex md:flex-row flex-col md:p-0 p-10">
         <div
-          className="md:w-[50%] h-[750px] brightness-50 md:rounded-tr-[54px]"
+          className="md:w-[50%] w-full md:h-[750px] h-[500px] brightness-50  rounded-tr-[54px]"
           style={{
             backgroundImage: `url('${infoPeople}')`,
             backgroundRepeat: "no-repeat",
