@@ -101,7 +101,7 @@ const Header = ({ transparent }) => {
         </div>
 
         <div
-          className={`space-y-4 w-[85%]  rounded-2xl max-w-[1200px] mx-auto px-4 md:hidden mt-16 py-32 bg-black opacity-90 ${
+          className={`space-y-4 w-[85%]  rounded-2xl max-w-[1200px] mx-auto px-4 md:hidden mt-16 py-32 bg-[#937D64] opacity-95 ${
             isMenuOpen ? "block fixed top-14 right-0 left-0" : "hidden"
           }`}
         >
