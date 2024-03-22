@@ -7,7 +7,7 @@ import house5 from "../../assets/House5.png";
 import house6 from "../../assets/House6.png";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import infoBG from "/footerBG.png";
+// import infoBG from "/footerBG.png";
 
 // Import Swiper styles
 import "swiper/css";
@@ -15,8 +15,8 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Keyboard, Pagination } from "swiper/modules";
-import { FaBed, FaHashtag } from "react-icons/fa6";
-import { FaBath } from "react-icons/fa";
+// import { FaBed, FaHashtag } from "react-icons/fa6";
+// import { FaBath } from "react-icons/fa";
 import { estates } from "../About/estates";
 import { Link } from "react-router-dom";
 const SimilarListingSlider = () => {
@@ -27,8 +27,22 @@ const SimilarListingSlider = () => {
     >
       <div className="pt-12 pb-20">
         <Swiper
-          slidesPerView={4}
-          spaceBetween={30}
+          slidesPerView={1}
+          spaceBetween={20}
+          breakpoints={{
+            515: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+          }}
           keyboard={{
             enabled: true,
           }}
@@ -43,7 +57,7 @@ const SimilarListingSlider = () => {
               <Link to={`/property/${est.id}`} key={est.id}>
                 <div
                   key={est.id}
-                  className="flex flex-col shadow-2xl mb-10  bg-[#fff] rounded-[32px]"
+                  className="flex flex-col shadow-2xl mb-10 md:mx-0 mx-4  bg-[#fff] rounded-[32px]"
                 >
                   <img
                     src={est.images[0]}

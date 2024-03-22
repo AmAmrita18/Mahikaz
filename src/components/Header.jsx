@@ -50,12 +50,12 @@ const Header = ({ transparent }) => {
             </NavLink>
           </li>
         </ul>
-        <div className="ml-[9rem]">
+        <div className="md:ml-[9rem]">
           <Link to="/">
             <img
               src={logo}
               alt="Logo"
-              className="py-2 object-cover"
+              className="md:w-[80px] md:h-[80px] w-[50px] h-[80px] py-2 object-cover"
               width={80}
               height={80}
               loading="lazy"

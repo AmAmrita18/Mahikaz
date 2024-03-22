@@ -18,13 +18,23 @@ import profile from "../../assets/profile.png";
 import Header from "../Header";
 import { beachfront } from "../../assets/Mahikaz assets/Beachfront Penthouse";
 
-
 const Details = ({ estate }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-const [displayImage, setDisplayImage] = useState(0)
-  const { title, description, features, beds, washroom, livingroom, images, address, price, averageprice } = estate;
+  const [displayImage, setDisplayImage] = useState(0);
+  const {
+    title,
+    description,
+    features,
+    beds,
+    washroom,
+    livingroom,
+    images,
+    address,
+    price,
+    averageprice,
+  } = estate;
 
   return (
     <div
@@ -37,10 +47,10 @@ const [displayImage, setDisplayImage] = useState(0)
       }}
     >
       <Header transparent={false} />
-      <div className="w-[80%] h-full mx-auto max-w-[1200px] pt-28 pb-12 flex flex-col">
+      <div className="w-[80%] h-full mx-auto max-w-[1200px] md:pt-28 pt-12 pb-12 flex flex-col">
         <div className="flex flex-row justify-between mb-10 ">
-          <div className="flex flex-col gap-y-8">
-            <h1 className="text-[#251408] text-[50px] leading-[25.6px] tracking-[-0.8px]">
+          <div className="flex flex-col md:gap-y-8 gap-y-4">
+            <h1 className="text-[#251408] md:text-[50px] text-[28px] md:font-normal font-bold leading-[25.6px] tracking-[-0.8px]">
               {title}
             </h1>
             <h2 className="text-[#251408] text-[18px] leading-[24px] tracking-[-0.38px]">
@@ -48,7 +58,7 @@ const [displayImage, setDisplayImage] = useState(0)
             </h2>
           </div>
           <div className="flex flex-col gap-y-8">
-            <h1 className="text-[#251408] text-[50px] leading-[25.6px] tracking-[-0.8px]">
+            <h1 className="text-[#251408] md:text-[50px] text-[20px] leading-[25.6px] tracking-[-0.8px]">
               {price}
             </h1>
             <h2 className="text-[#251408] text-[18px] leading-[24px] text-end tracking-[-0.38px]">
@@ -57,22 +67,36 @@ const [displayImage, setDisplayImage] = useState(0)
           </div>
         </div>
 
-        <div className="flex flex-row">
-          <div className="w-[60%]">
+        <div className="flex md:flex-row flex-col">
+          <div className="md:w-[60%]">
             <div className="">
-              <img src={images[displayImage]} width={704} height={520} className="w-[704px] h-[520px] shadow-2xl rounded-tr-[57px] object-cover" alt="" />
+              <img
+                src={images[displayImage]}
+                width={704}
+                height={520}
+                className="md:w-[704px] md:h-[520px] w-[500px] h-[400px] shadow-2xl rounded-tr-[57px] object-cover"
+                alt=""
+              />
             </div>
 
-            <div  className="flex w-full flex-row gap-6 py-6">
-              {images.map((image, index) => index!=displayImage&& (
-                <div onClick={() => setDisplayImage(index)} key={`img`+index} className="shadow-2xl  cursor-pointer">
-                <img src={image}  alt="" className="w-[80px] h-[80px] object-cover rounded-tr-2xl"/>
-              </div>
-              ))}
-              
-
+            <div className="flex w-full flex-row md:gap-6 gap-2 py-6">
+              {images.map(
+                (image, index) =>
+                  index != displayImage && (
+                    <div
+                      onClick={() => setDisplayImage(index)}
+                      key={`img` + index}
+                      className="shadow-2xl  cursor-pointer"
+                    >
+                      <img
+                        src={image}
+                        alt=""
+                        className="md:w-[80px] md:h-[80px] w-[60px] h-[50px] object-cover rounded-tr-2xl"
+                      />
+                    </div>
+                  )
+              )}
             </div>
-
 
             {/* details div  */}
             {/* <div className=" bg-white shadow-2xl  rounded-xl">
@@ -113,7 +137,6 @@ const [displayImage, setDisplayImage] = useState(0)
                 </div>
               </div>
             </div> */}
-
 
             {/* features div  */}
             {/* <div className=" my-12 shadow-2xl   bg-white rounded-xl ">
@@ -193,18 +216,21 @@ const [displayImage, setDisplayImage] = useState(0)
             </div> */}
           </div>
 
-
-          <div className="w-[40%]  ">
-
+          <div className="md:w-[40%]  ">
             {/* mahikaz form  */}
             <div
               className="w-full bg-white
-            mx-6  shadow-2xl rounded-2xl py-6"
+            md:mx-6  shadow-2xl rounded-2xl py-6 md:mt-0 mt-8"
             >
-
               <div className="flex flex-row gap-3 items-center bg-[#F5F5F5] mx-6 my-3 rounded-xl px-3 py-4">
                 <div>
-                  <img src={profile} width={40} height={40} alt="" className="object-cover w-[40px] h-[40px]"/>
+                  <img
+                    src={profile}
+                    width={40}
+                    height={40}
+                    alt=""
+                    className="object-cover w-[40px] h-[40px]"
+                  />
                 </div>
                 <div className="flex flex-col gap-1">
                   <h1 className="text-black text-[15px] leading-[17.28px] tracking-[-0.38px]">
@@ -267,7 +293,7 @@ const [displayImage, setDisplayImage] = useState(0)
             <br />
 
             {/* description  */}
-            <div className="w-full  mb-10 mx-6  shadow-2xl rounded-2xl ">
+            <div className="w-full  mb-10 md:mx-6  shadow-2xl rounded-2xl ">
               <div className="mt-4 bg-white rounded-xl ">
                 <div className="flex justify-between px-6 py-8 mx-6 border-b border-[#E4E4E4]">
                   <h1 className="text-black text-[20px] leading-[23.04px] tracking-[-0.5px]">
@@ -277,11 +303,12 @@ const [displayImage, setDisplayImage] = useState(0)
                 <div className="flex flex-col px-6 py-6 gap-4 ">
                   {estate.description.map((desc, index) => (
                     <div key={`PAR${estate.title + index}`}>
-                      <p className="text-black text-[15px] leading-[22px] tracking-[-0.38px]">{desc}</p>
+                      <p className="text-black text-[15px] leading-[22px] tracking-[-0.38px]">
+                        {desc}
+                      </p>
                       <br />
                     </div>
                   ))}
-
                 </div>
               </div>
             </div>
