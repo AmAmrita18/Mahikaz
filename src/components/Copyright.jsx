@@ -7,7 +7,7 @@ const Copyright = () => {
           <h1 className="md:text-[16px] text-[12px] text-[#1E1E1E] tracking-widest leading-[18.43px]">
             Built With Passion by <span className="border-b-2 border-black pb-2">The Meraki Studio</span>
           </h1>
-          <h1 className="md:text-[16px] text-[12px] text-[#1E1E1E] tracking-widest leading-[18.43px]">
+          <h1 className="md:text-[16px] text-[12px] text-[#1E1E1E] tracking-widest leading-[18.43px] md:mt-0 mt-5">
             © Copyright 2024 MahiKaz Limited | Privacy Policy
           </h1>
         </div>
